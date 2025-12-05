@@ -13,23 +13,23 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '36360287'))
 API_HASH = environ.get('API_HASH', '4283a743d393b1094600a7065a50b3c0')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8462571682:AAHEyn5S5wZevvHi7sxuY6sGUSUtsKHdWhA")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8478108995:AAHY46K6-yeOKnAGLuQmok4ShQOXshEAIwA")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/251e8edb82be6141ee9cd-8e50125410860501b1.jpg https://graph.org/file/eda2b0d44e3b0c52fb37f-b30338264b1735b63a.jpg https://graph.org/file/94121b562c6bbc2fc72e4-5930a3ec6b538af53c.jpg https://graph.org/file/7d0ab53d8ae979626e63f-31cc0ad6c6cd336827.jpg https://graph.org/file/6061b47ce6a720a3b553d-c1e63b51fd7af3eb89.jpg https://graph.org/file/006d22fb996e602a9e7c1-b7caa341ea0ec06dd0.jpg https://graph.org/file/9c7937055d3f0eeb7808f-2fa5a88f7ebb8d31dd.jpg https://graph.org/file/a2afd0e2fffbf1e2c0608-4c0ea6a15bb0037e3b.jpg https://graph.org/file/d780309e8a7e1ad11137e-f289cfa3d2849c9bd8.jpg https://graph.org/file/c87b5864bb94988c84441-89738458a83ddbfbfe.jpg https://graph.org/file/9d3b563a3965fd99e9abd-95a9b47446b46066fe.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/716a0a5cca9d002eed3d6-4c9de96a450bb1ceb0.jpg https://graph.org/file/777c7b12db0b4dbf75760-817264bd5a5ed92d70.jpg https://graph.org/file/602477a70040a63e491e3-58d2fc5255a23df7c1.jpg https://graph.org/file/4e034e79d38e24faaa1a5-dd9dc641d542516b61.jpg https://graph.org/file/73ce0d0d05733f96f58cc-43d6ce7f812d8ee780.jpg https://graph.org/file/87c48d966a1e4a00cc577-229ca4c8479a7d3c36.jpg https://graph.org/file/8b199354610bc668823b3-b77d8aaf27ad111ebe.jpg https://graph.org/file/c3d53c845d49d333992d6-93f118b4beba28e6f8.jpg https://graph.org/file/4864cd414693a4e4cdabb-a30453bb64963f0796.jpg https://graph.org/file/87b8bc2f50d1018c9b5b4-1b75796a7bcf5e8743.jpg https://graph.org/file/f03b892d4ce72d9631334-b1bedf8e365fb13da4.jpg https://graph.org/file/fd92d42870198ac49185f-e45c3500869094e252.jpg https://graph.org/file/5360c6fb150fd5a3a77cc-ae679e2f2881700bd3.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6936341505 8417661273').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6936341505 8417661273').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8417661273').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '8417661273').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003460670773'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003347914944'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003321680906').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003461267169').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -59,7 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Mreldro:mreldro@cluster0.wdjsw5c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://UnknownUser:mreldro@cluster0.3fta4le.mongodb.net/?appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -196,6 +196,7 @@ else:
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
 
